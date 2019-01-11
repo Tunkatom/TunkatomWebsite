@@ -1,12 +1,65 @@
+// begin general template
+
 $font: "Verdana", "Arial", "sans-serif"
 $color1: black
 $color2: grey
 $color3: rgba(210,210,210,.3)
+$colorBlue: rgb(60,180,255)
+
+.header
+    background-color: $colorBlue
+    display: grid
+    grid-template-columns: auto 350px
+    grid-template-rows: auto
+    grid-gap: 8px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    top: 0
+    left: 0
+    font-family: $font
+    color: $color1
+
+.logo
+    padding-left: 1em
+    display: block
+    grid-column: 1/2
+
+.links
+    background-color: $colorBlue
+    border-left: 2px solid $color2
+    grid-column: 2/3
+    display: grid
+    margin: 0
+    grid-template-columns: auto
+    text-align: center
+    padding: 1em
+
+.links a:link, a:visited
+    color: $color1
+    text-decoration: none
+
+.links a:hover
+    background-color: $color2
+    color: $color3
+
+.link1
+    display: inline
+    grid-column: 1/2
+
+.link2
+    display: inline
+    grid-column: 2/3
+
+.link3
+    display: inline
+    grid-column: 3/4
 
 body
-    background: linear-gradient($color3, rgb(260,260,260))
+    background: linear-gradient($colorBlue, $color2)
     background-repeat: no-repeat
     background-attachment: fixed
+// end general template
 
 .title
     font-family: $font
@@ -19,7 +72,7 @@ body
     margin-top: 1em
     margin-left: auto
     margin-right: auto
-    border: 2px solid $color2
+    border-left: 2px solid $color2
 
 .body
     font-family: $font
@@ -27,13 +80,13 @@ body
     font-size: 200%
 
 .gridContainer
-    background-color: rgb(200, 200, 200)
+    background-color: rgba(200, 200, 200, .5)
     border-left: 2px solid $color2
     width: 216px
     margin-left: auto
     margin-right: auto
     display: grid
-    grid-template-columns: auto auto auto
+    grid-template-columns: auto
     grid-gap: 1em
     padding: 1em
     text-align: center
@@ -49,3 +102,10 @@ body
     grid-column: 2/3
     width: 100px
     margin: auto
+
+.text
+    text-align: center
+    padding: 1em
+    color: $color1
+    font-family: $font
+    font-size: 110%
