@@ -1,7 +1,7 @@
 $font: "Verdana", "Arial", "sans-serif"
 $color1: black
 $color2: grey
-$color3: rgba(220,220,220,0.3)
+$color3: rgba(210,210,210,.3)
 
 body
     background: linear-gradient($color3, rgb(260,260,260))
@@ -25,3 +25,27 @@ body
     font-family: $font
     text-align: center
     font-size: 200%
+
+.gridContainer
+    background-color: rgb(200, 200, 200)
+    border-left: 2px solid $color2
+    width: 216px
+    margin-left: auto
+    margin-right: auto
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-gap: 1em
+    padding: 1em
+    text-align: center
+    
+.grid1
+    display: block
+    grid-column: 1/2
+    width: 100px
+    margin: auto
+
+.grid2
+    display: block
+    grid-column: 2/3
+    width: 100px
+    margin: auto

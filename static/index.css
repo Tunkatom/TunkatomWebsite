@@ -1,6 +1,6 @@
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 220, 220, 0.3)), to(white));
-  background: linear-gradient(rgba(220, 220, 220, 0.3), white);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(210, 210, 210, 0.3)), to(white));
+  background: linear-gradient(rgba(210, 210, 210, 0.3), white);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -8,7 +8,7 @@ body {
 .title {
   font-family: "Verdana", "Arial", "sans-serif";
   color: black;
-  background-color: rgba(220, 220, 220, 0.3);
+  background-color: rgba(210, 210, 210, 0.3);
   text-align: center;
   font-size: 140%;
   width: 300px;
@@ -24,4 +24,37 @@ body {
   text-align: center;
   font-size: 200%;
 }
-/*# sourceMappingURL=main.css.map */
+
+.gridContainer {
+  background-color: #c8c8c8;
+  border-left: 2px solid grey;
+  width: 216px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.grid1 {
+  display: block;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 100px;
+  margin: auto;
+}
+
+.grid2 {
+  display: block;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100px;
+  margin: auto;
+}
+/*# sourceMappingURL=index.css.map */
