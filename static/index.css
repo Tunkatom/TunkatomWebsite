@@ -36,7 +36,6 @@
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   text-align: center;
-  padding: 1em;
 }
 
 .links a:link, a:visited {
