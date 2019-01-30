@@ -40,17 +40,20 @@ $colorBlue: rgb(60,180,255)
     background-color: $color2
     color: $color3
 
-.link1
+$link
     display: inline
+
+.link1
     grid-column: 1/2
+    $link
 
 .link2
-    display: inline
     grid-column: 2/3
+    $link
 
 .link3
-    display: inline
     grid-column: 3/4
+    $link
 
 body
     background: linear-gradient($colorBlue, $color2)
@@ -86,18 +89,19 @@ body
     grid-gap: 1em
     padding: 1em
     text-align: center
+
+$grid
+    display: block
+    width: 100px
+    margin: auto
     
 .grid1
-    display: block
     grid-column: 1/2
-    width: 100px
-    margin: auto
+    $grid
 
 .grid2
-    display: block
     grid-column: 2/3
-    width: 100px
-    margin: auto
+    $grid
 
 .text
     text-align: center
@@ -105,3 +109,25 @@ body
     color: $color1
     font-family: $font
     font-size: 110%
+
+.projectBox
+    margin: 2em
+    display: grid
+    grid-template-columns: auto
+    font-family: $font
+    font-size: 120%
+    grid-gap: 1em
+    margin-left: 15%
+    margin-right: 15%
+
+$project:
+    display: block
+    grid-column: 1/2
+    background-color: $color3
+    border-left: $color2 solid 2px
+
+.projectWhiskey
+    $project
+
+.projectGame
+    $project

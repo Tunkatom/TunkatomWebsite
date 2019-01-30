@@ -136,4 +136,39 @@ body {
   font-family: "Verdana", "Arial", "sans-serif";
   font-size: 110%;
 }
+
+.projectBox {
+  margin: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  font-family: "Verdana", "Arial", "sans-serif";
+  font-size: 120%;
+  grid-gap: 1em;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.projectWhiskey {
+  display: block;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgba(210, 210, 210, 0.3);
+  border-left: grey solid 2px;
+}
+
+.projectGame {
+  display: block;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: rgba(210, 210, 210, 0.3);
+  border-left: grey solid 2px;
+}
 /*# sourceMappingURL=index.css.map */
