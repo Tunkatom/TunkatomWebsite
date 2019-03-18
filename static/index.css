@@ -49,24 +49,24 @@
 }
 
 .link1 {
-  display: inline;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  display: inline;
 }
 
 .link2 {
-  display: inline;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  display: inline;
 }
 
 .link3 {
-  display: inline;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  display: inline;
 }
 
 body {
@@ -112,19 +112,19 @@ body {
 }
 
 .grid1 {
-  display: block;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  display: block;
   width: 100px;
   margin: auto;
 }
 
 .grid2 {
-  display: block;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  display: block;
   width: 100px;
   margin: auto;
 }
@@ -145,7 +145,7 @@ body {
       grid-template-columns: auto;
   font-family: "Verdana", "Arial", "sans-serif";
   font-size: 120%;
-  grid-gap: 1em;
+  grid-gap: 1.5em;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -155,10 +155,9 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  padding-left: 1em;
-  padding-right: 1em;
   background-color: rgba(210, 210, 210, 0.3);
   border-left: grey solid 2px;
+  padding-left: 1em;
 }
 
 .projectGame {
@@ -166,9 +165,18 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  padding-left: 1em;
-  padding-right: 1em;
   background-color: rgba(210, 210, 210, 0.3);
   border-left: grey solid 2px;
+  padding-left: 1em;
+}
+
+.SPCCeportfolio {
+  display: block;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: rgba(210, 210, 210, 0.3);
+  border-left: grey solid 2px;
+  padding-left: 1em;
 }
 /*# sourceMappingURL=index.css.map */

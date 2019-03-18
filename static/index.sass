@@ -1,11 +1,11 @@
 $font: "Verdana", "Arial", "sans-serif"
-$color1: black
-$color2: grey
-$color3: rgba(210,210,210,.3)
-$colorBlue: rgb(60,180,255)
+$black: black
+$grey: grey
+$backGrey: rgba(210,210,210,.3)
+$backBlue: rgb(60,180,255)
 
 .header
-    background-color: $colorBlue
+    background-color: $backBlue
     display: grid
     grid-template-columns: auto 350px
     grid-template-rows: auto
@@ -16,7 +16,7 @@ $colorBlue: rgb(60,180,255)
     top: 0
     left: 0
     font-family: $font
-    color: $color1
+    color: $black
 
 .logo
     padding-left: 1em
@@ -24,8 +24,8 @@ $colorBlue: rgb(60,180,255)
     grid-column: 1/2
 
 .links
-    background-color: $colorBlue
-    border-left: 2px solid $color2
+    background-color: $backBlue
+    border-left: 2px solid $grey
     grid-column: 2/3
     display: grid
     margin: 0
@@ -33,37 +33,34 @@ $colorBlue: rgb(60,180,255)
     text-align: center
 
 .links a:link, a:visited
-    color: $color1
+    color: $black
     text-decoration: none
 
 .links a:hover
-    background-color: $color2
-    color: $color3
-
-$link
-    display: inline
+    background-color: $grey
+    color: $backGrey
 
 .link1
     grid-column: 1/2
-    $link
+    display: inline
 
 .link2
     grid-column: 2/3
-    $link
+    display: inline
 
 .link3
     grid-column: 3/4
-    $link
+    display: inline
 
 body
-    background: linear-gradient($colorBlue, $color2)
+    background: linear-gradient($backBlue, $grey)
     background-repeat: no-repeat
     background-attachment: fixed
 
 .title
     font-family: $font
-    color: $color1
-    background-color: $color3
+    color: $black
+    background-color: $backGrey
     text-align: center
     font-size: 140%
     width: 300px
@@ -71,7 +68,7 @@ body
     margin-top: 1em
     margin-left: auto
     margin-right: auto
-    border-left: 2px solid $color2
+    border-left: 2px solid $grey
 
 .body
     font-family: $font
@@ -80,7 +77,7 @@ body
 
 .gridContainer
     background-color: rgba(200, 200, 200, .5)
-    border-left: 2px solid $color2
+    border-left: 2px solid $grey
     width: 216px
     margin-left: auto
     margin-right: auto
@@ -90,23 +87,23 @@ body
     padding: 1em
     text-align: center
 
-$grid
+@mixin grid
     display: block
     width: 100px
     margin: auto
-    
+
 .grid1
     grid-column: 1/2
-    $grid
+    @include grid
 
 .grid2
     grid-column: 2/3
-    $grid
+    @include grid
 
 .text
     text-align: center
     padding: 1em
-    color: $color1
+    color: $black
     font-family: $font
     font-size: 110%
 
@@ -116,18 +113,22 @@ $grid
     grid-template-columns: auto
     font-family: $font
     font-size: 120%
-    grid-gap: 1em
+    grid-gap: 1.5em
     margin-left: 15%
     margin-right: 15%
 
-$project:
+@mixin project
     display: block
     grid-column: 1/2
-    background-color: $color3
-    border-left: $color2 solid 2px
+    background-color: $backGrey
+    border-left: $grey solid 2px
+    padding-left: 1em
 
 .projectWhiskey
-    $project
+    @include project
 
 .projectGame
-    $project
+    @include project
+
+.SPCCeportfolio
+    @include project
