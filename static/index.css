@@ -150,27 +150,7 @@ body {
   margin-right: 15%;
 }
 
-.projectWhiskey {
-  display: block;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  background-color: rgba(210, 210, 210, 0.3);
-  border-left: grey solid 2px;
-  padding-left: 1em;
-}
-
-.projectGame {
-  display: block;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  background-color: rgba(210, 210, 210, 0.3);
-  border-left: grey solid 2px;
-  padding-left: 1em;
-}
-
-.SPCCeportfolio {
+.projectItem {
   display: block;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
